@@ -1,0 +1,36 @@
+.cards{
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 50px auto;
+}
+
+.card{
+    width: 30%;
+    height: 480px;
+    margin: 10px ;
+}
+
+img{
+    width: 100%;
+    height: 300px;
+}
+
+.description span{
+    font-size: 18px;
+    color: #29c5c5;
+    font-family: monospace;
+    text-transform: uppercase;
+    margin-right: 5px;
+}
+
+/* .card-text{
+    width: 30%;
+} */
+
+.description {
+    display: flex;
+    justify-content: flex-start;
+}

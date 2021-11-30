@@ -1,0 +1,15 @@
+<div class="cards">
+    <input type="text" [(ngModel)]="searchPost" name="searchPost" class="form-control"
+            placeholder="search announcement..">
+    <div class="card" *ngFor="let post of userBlog | search: searchPost, let i=index">
+        <img [src]="post.image" alt="">
+        <div class="card-body">
+            <div class="description">
+                <span class="card-date">{{ post.date | date: 'MMMM d, y' }}</span>
+            </div>
+            <h5 class="card-title">{{ post.title }}</h5>
+            <p class="card-text">{{ post.text | slice:0:40 }} ...</p>
+            <a [routerLink]="[ '/blog', post.id ]" class="btn btn-dark">Details</a>
+        </div>
+    </div>
+</div>

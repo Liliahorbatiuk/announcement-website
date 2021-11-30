@@ -1,0 +1,31 @@
+.container{
+    width: 60%;
+    margin: 10px auto;
+}
+
+.post-header h2{
+    text-align: center;
+    font-family: Impact;
+    text-transform: uppercase;
+    color: chocolate;
+    letter-spacing: 5px;
+}
+
+.col-12 p{
+    text-align: center;
+    color: #222222;
+    font-family: cursive;
+    letter-spacing: 2px;
+}
+
+.col-12 img{
+    width: 400px;
+    height: 300px;
+}
+
+.description{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    color: #7a3f14;
+}
